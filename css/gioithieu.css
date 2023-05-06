@@ -1,0 +1,92 @@
+@import "style.css";
+
+/* SECTION */
+
+.main {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.main a {
+    color: #1a75ff;
+    text-decoration: none;
+}
+
+.main p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.list h3 {
+    padding-left: 10px;
+    color: #ffa500;
+}
+
+ul.list-child {
+    list-style-type: disc;
+}
+
+ul.list-child,
+ol.list-child {
+    padding-left: 50px;
+}
+
+h3.thank {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.c1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: rgb(176, 94, 27);
+}
+
+.than {
+    padding-left: 300px;
+}
+
+.abc {
+    padding-right: 30px;
+    width: 280px;
+    height: 300px;
+    border: 3px solid white;
+    float: left;
+    margin: 10px;
+}
+
+.nd {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: justify;
+}
+
+.phancuoi {
+    background-color: rgb(170, 210, 60);
+}
+
+.pc {
+    text-align: justify;
+}
+
+.q {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    text-align: center;
+    color: white;
+}

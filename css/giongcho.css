@@ -1,0 +1,106 @@
+        @import "style.css";
+        /* SECTION */
+        
+        .main {
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+        
+        .headline {
+            border-bottom: 2px solid #ffa500;
+        }
+        
+        .main h1 {
+            background-color: #ff0000;
+            color: #ffffff;
+            width: 25%;
+            border-radius: 0 20px 0 0;
+            margin-bottom: 0px;
+            padding: 5px;
+            border-bottom: 2px solid #ffa500;
+        }
+        
+        .text>ul {
+            list-style-type: none;
+        }
+        
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+        }
+        
+        .info {
+            width: 33.333333333333333333333%;
+            display: flex;
+            padding: 10px;
+            border-radius: 15px;
+            border: 5px solid #f2f2f2;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            transition-duration: 0.5s;
+        }
+        
+        .info h4 {
+            padding: 10px;
+        }
+        
+        .info:hover {
+            background-color: rgba(255, 165, 0, 0.5);
+        }
+        
+        .text {
+            width: 80%;
+        }
+        
+        .image {
+            width: 20%;
+        }
+        
+        .image img {
+            width: 100%;
+            transition: stranform 1s;
+        }
+        
+        .image img:hover {
+            transform: rotate(10deg)
+        }
+        
+        .chon {
+            display: flex;
+        }
+        
+        .muacun,
+        .chitiet {
+            display: block;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            background-color: #ffffff;
+            text-decoration: none;
+            border-radius: 3px;
+        }
+        
+        .muacun {
+            color: #ff0000;
+            border: 1px solid #ff0000;
+            width: 35%;
+        }
+        
+        .muacun:hover {
+            color: #ffffff;
+            background-color: #ff0000;
+        }
+        
+        .chitiet {
+            color: #007bff;
+            border: 1px solid #007bff;
+            width: 30%;
+        }
+        
+        .chitiet:hover {
+            color: #ffffff;
+            background-color: #007bff;
+        }

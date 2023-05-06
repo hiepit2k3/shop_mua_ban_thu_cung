@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thanh Toán</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style-1.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="../css/style-1.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v7.0"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
+</head>
+
+<body style="font-family:'Quicksand', sans-serif ;">
+    <!-- ---header -->
+    <div class="container-fluid header">
+        <div class="container-fluid fixed-top bg-light">
+            <nav class=" navbanavbar-expand-lg">
+                <a href="index.html" class="navbar-brand">
+                    <!-- <div class="logo">
+                        <img src="./img/logo-z.png" alt="">
+                    </div> -->
+                </a>
+                <button class="navbar-toggler menu" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav mr-auto header-menu">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">TRANG CHỦ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cuahang.html" tabindex="-1" aria-disabled="false">Cửa hàng</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" tabindex="-1" aria-disabled="true">Đăng Nhập
+                        </li>
+                    </ul>
+                    <div class="mr-3 cart">
+                        <a href="#" onclick="dathang()">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <a class="ml-3 mr-3" href="./card.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- ----body -->
+    <div id="cart" class="container " style="height:auto; margin-top:8% ;">
+        <h5>Giỏ hàng</h5>
+        <div class="row" id="khung">
+            <div class="col-8">
+                <table class="table">
+                    <thead>
+                        <tr class='text-center'>
+
+                            <th>IMG
+                            </th>
+                            <th>Tên
+                            </th>
+                            <th>Đơn giá
+                            </th>
+                            <th>Số lượng
+                            </th>
+                            <th>Tổng
+                            </th>
+                            <th> Xóa
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="show-cart-1" id="show-cart-1">
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-4">
+                <div class="thanhtoan">
+                    <div class="price">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="price-text">Tạm tính :</div>
+
+                            </div>
+
+                            <div class="col-6 text-right">
+                                <div class="mr-0">
+                                    <span class="total-cart total-1"></span>
+                                    <div class="d-inline">₫</div>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-4">
+                                <div>Tổng tiền : </div>
+
+                            </div>
+                            <div class="col-6 mt-4 text-right">
+                                <div class="mr-0">
+                                    <span class="total-cart total"></span>
+
+                                    <div class="d-inline total">₫</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 button text-center">
+                        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#diachinhanhang">
+                            Tiến hành đặt hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <!-- --thongtin-- -->
+        <div class="container info">
+            <div class="row mt-5 mb-5">
+                <div class="col-3 info-col">
+                    <div class="h6">
+                        GỌI MUA HÀNG(8:30 - 17:00)
+                    </div>
+                    <a href="tel:0395342134">
+                        <i class="fas fa-phone-alt"></i>
+                        039 534 2134
+                    </a>
+                    <div class="info-foot">Tất cả các ngày trong tuần</div>
+                </div>
+                <div class="col-3 info-col">
+                    <div class="h6">GỌI MUA HÀNG(8:30 - 17:00) </div>
+
+                    <a href="tel:0395342134">
+                        <i class="fas fa-phone-alt"></i>
+                        039 534 2134
+                    </a>
+                    <div class="info-foot">Tất cả các ngày trong tuần</div>
+                </div>
+                <div class="col-3">
+                    <div class="h6">ĐĂNG KÍ NHẬN THÔNG TIN MỚI</div>
+                    <form action="" class="form-inline">
+                        <input type="text" class="form-control" style="width: 60%;">
+                        <a href="" class=" btn btn-outline-dark">Đăng kí</a>
+                    </form>
+                </div>
+                <div class="col-3 info-social">
+                    <div class="h6">THEO DÕI CHÚNG TÔI</div>
+                    <div class="row">
+                        <div class="col-3">
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- --footer -->
+    <!-- --- -->
+    <div class="modal fade" id="diachinhanhang" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Địa chỉ nhận hàng</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" method="get">
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="">Họ Tên Người Nhận</label>
+                                <input type="text" class="form-control" id="inputnguoinhan">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="">Số điện thoại</label>
+                                <input type="number" class="form-control" id="inputsdt">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-8">
+                                <label for="">Địa chỉ</label>
+                                <input type="text" class="form-control" id="inputdiachi">
+                            </div>
+                            <div class="form-group col-4">
+                                <label for="">Hình thức thanh toán</label>
+                                <select class="form-control" name="" id="inputthanhtoan" class="btn style=" border: 1px
+                                    black solid;>
+                                    <option selected> Chọn hình thức thanh toán
+                                    </option>
+                                    <option value="1">Thanh toán bằng tiền mặt
+                                    </option>
+                                    <option value="2">InternetBanking</option>
+                                    <option value="3">VisaCard</option>
+                                    <option value="4">Paypal</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="">Tỉnh - Thành phố</label>
+                                <select id="inputtinh" class="form-control">
+                                    <option selected>Chọn</option>
+                                    <option value="1">Hà Nội</option>
+                                    <option value="2">Đà Nẵng</option>
+                                    <option value="3">Hồ Chí Minh</option>
+                                    <option value="4">Bình Định</option>
+                                    <option value="5">Quảng Ngãi</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" id="inputemail">
+                            </div>
+                            <div class=" form-group col-12">
+                                <label for="">Ghi chú</label>
+                                <textarea class="form-control" name="" id="inputghichu" cols="30" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button onclick="infoCart()" type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#xacnhan" data-dismiss="modal">Xác Nhận đặt hàng</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --Đăng nhập thành công sẽ hiện cái này-- -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden=" true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-success">
+                    <div class="text-center text-danger animate__animated animate__bounce"
+                        style=" border-bottom: 2px rgba(255, 0, 0, 0.144) solid;">
+                        <h4> Đặt hàng thành công </h4>
+                    </div>
+                    <div class="text-right">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="./user/index_user.html" class="clear-cart btn btn-outline-danger">Xong</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Đăng nhập không thành công sẽ hiện cái này
+    <div class="modal fade" id="login1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden=" true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body modal-success">
+                    <div class="text-center text-danger animate__animated animate__bounce"
+                        style=" border-bottom: 2px rgba(255, 0, 0, 0.144) solid;">
+                        <h4> Đặt hàng không thành công, Vui Lòng Đăng Nhập</h4>
+                    </div>
+                    <div class="text-right">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="./index.html" class="clear-cart btn btn-outline-danger">Xong</a>
+
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- --modal-- -->
+    <div class="modal fade" id="xacnhan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden=" true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-body modal-success">
+                    <div class="text-center text-danger animate__animated animate__bounce
+                       style=" border-bottom: 2px rgba(255, 0, 0, 0.144) solid;">
+                        <h4> Thông tin đặt hàng </h4>
+                        <!-- <div id="test"></div> -->
+
+                    </div>
+                    <div class="animate__animated animate__backInRight">
+                        <div class="row col-7">
+                            <div class="col-4 text-primary">Họ tên:</div>
+                            <div class="col-8" id="inputnguoinhan1"></div>
+                            <div class="col-4 mt-2 text-primary">Số điện thoại:</div>
+                            <div class="col-8 mt-2" id="inputsdt1"></div>
+                            <div class="col-4 mt-2 text-primary">Địa chỉ:</div>
+                            <div class="col-8 mt-2" id="inputdiachi1"></div>
+                            <div class="col-4 mt-2 text-primary">Hình thức thanh toán:
+                            </div>
+                            <div class="col-8 mt-2" id="inputthanhtoan1"></div>
+                            <div class="col-4 mt-2 text-primary">Email:</div>
+                            <div class="col-8 mt-2" id="inputemail1"></div>
+                            <div class="col-4 mt-2 text-primary">Ghi chú:</div>
+                            <div class="col-8 mt-2" id="inputghichu1"></div>
+                            <div class="col-4 mt-2 text-primary">Số tiền cần trả:</div>
+                            <div class="col-8 mt-2">
+                                <span class="total-cart total-1"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                        <button onclick="dathang()" class="btn btn-outline-danger text-right" data-dismiss="modal"
+                            data-toggle="modal" data-target="#login">Xác nhận đặt hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------- -->
+</body>
+<script src="javascript/cuahang1.js"></script>
+<script src="javascript/giohang.js"></script>
+<script src="javascript/hieuungdangnhap.js"></script>
+<!-- <script language="Javascript" src="javascript/"></script> -->
+
+</html>

@@ -1,0 +1,77 @@
+@import "style.css";
+* {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2vw;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: #009FCB;
+}
+
+h1 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 3vw;
+    color: #ffffff;
+    background-color: #009FCB;
+    border-bottom: none;
+}
+
+.in-content {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.in-content,
+.click>a,
+.huongdan {
+    text-align: center;
+}
+
+.col50 {
+    width: 50%;
+    margin: 20px;
+}
+
+.col50 img {
+    width: 100%;
+}
+
+.background {
+    background-color: #f2f2f2;
+}
+
+.guide {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.cach {
+    text-align: center;
+    padding: 10px;
+}
+
+.click>a {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #009FCB;
+    color: #009FCB;
+}
+
+.click>a:hover {
+    background-color: #009FCB;
+    color: #ffffff;
+}

@@ -1,0 +1,135 @@
+@import "style.css";
+
+/* SECTION */
+
+
+/* menu nội dung chính */
+
+.main {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+}
+
+.menu_main {
+    width: 25%;
+}
+
+.menu_main ul {
+    list-style-type: none;
+}
+
+.menu_main h1 {
+    background-color: #ff0000;
+    text-align: center;
+    color: #ffffff;
+}
+
+.menu_main a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    color: #000000;
+}
+
+.menu_main a:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ffa500;
+}
+/* nội dung chính */
+.info_main {
+    width: 75%;
+}
+
+.info_main>h1 {
+    background-color: #f2f2f2;
+    color: #000000;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info_product {
+    width: 25%;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 5px;
+    border: 5px solid #f2f2f2;
+    border-radius: 10px;
+    transition: background-color 0.7s;
+}
+
+.info_product:hover {
+    background-color: rgba(255, 165, 0, 0.5);
+}
+
+.info_product>h6,
+.info_product>p {
+    padding: 5px 10px;
+}
+
+.info_product>img {
+    width: 100%;
+}
+
+.choose {
+    display: flex;
+}
+
+.chitiet,
+.dathang {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.dathang {
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    width: 50%;
+    width: 100px;
+}
+
+.dathang:hover {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+
+.chitiet {
+    color: #007bff;
+    border: 1px solid #007bff;
+    width: 30%;
+}
+
+.chitiet:hover {
+    color: #ffffff;
+    background-color: #007bff;
+}
+
+@media screen and (max-width: 420px) {
+    * {
+        font-size: 5px;
+    }
+    .tieude {
+        font-size: 2vw;
+    }
+    #nav_menu,
+    .info,
+    .section-content,
+    .info_product {
+        width: 100%;
+    }
+    .menu_main {
+        width: 50%;
+    }
+}

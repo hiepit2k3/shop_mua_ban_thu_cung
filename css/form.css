@@ -1,0 +1,21 @@
+.form-dangky > .emails > #emaild{
+    height: 40px;
+    width: 80%;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.form-dangky > .pass_w > #passwordd{
+    height: 40px;
+    width: 80%;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.form-dangnhap > .pass_dn > #password{
+    height: 40px;
+    width: 80%;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}

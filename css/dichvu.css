@@ -1,0 +1,38 @@
+@import "style.css";
+
+/* SECTION */
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.main a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+.service {
+    margin: 2px;
+    background-color: #f2f2f2;
+}
+
+.list-service h3 {
+    padding: 20px 0 20px 0;
+    color: #ffa500
+}
+
+ul.list-service {
+    list-style-type: none;
+    padding: 5px;
+}
+
+ul.info-service {
+    list-style-type: disc;
+}
+
+ul.info-service>li {
+    padding: 5px 20px;
+    list-style-position: inside;
+}
